@@ -17,6 +17,8 @@
     if($num == 1){
         echo "User Already Taken";
     }else{
-        $reg = "Insert into user";
+        $reg = "Insert into user(name, password) values ('$name', '$password')";
+        mysqli_query($con,$reg);
+        echo "Registration Successful";
     }
 ?>
