@@ -1,6 +1,6 @@
 <?php 
 session_start();
-echo
+
 
 	include("connection.php");
 	include("functions.php");
