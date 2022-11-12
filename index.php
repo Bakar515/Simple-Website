@@ -1,5 +1,6 @@
 <?php 
 session_start();
+echo
 
 	include("connection.php");
 	include("functions.php");
@@ -11,7 +12,7 @@ session_start();
 <!DOCTYPE html>
 <html>
 <head>
-	<title>My website</title>
+	<title>Simple Website</title>
 </head>
 <body>
 
@@ -19,6 +20,10 @@ session_start();
 	<h1>This is the index page</h1>
 
 	<br>
+	
+	<!-- <?php header("Location: Gallery-page/index.html"); ?> -->
+
 	Hye, <?php echo $user_data['user_name']; ?>
+
 </body>
 </html>
