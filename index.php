@@ -21,8 +21,6 @@ echo
 
 	<br>
 	
-	<!-- <?php header("Location: Gallery-page/index.html"); ?> -->
-
 	Hye, <?php echo $user_data['user_name']; ?>
 
 </body>
