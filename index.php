@@ -1,53 +1,24 @@
-<?php
-
+<?php 
 session_start();
 
-if (isset($_SESSION["user_id"])) {
-    
-    $mysqli = require __DIR__ . "/database.php";
-    
-    $sql = "SELECT * FROM user
-            WHERE id = {$_SESSION["user_id"]}";
-            
-    $result = $mysqli->query($sql);
-    
-    $user = $result->fetch_assoc();
-}
+	include("connection.php");
+	include("functions.php");
+
+	$user_data = check_login($con);
 
 ?>
+
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Home</title>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+	<title>My website</title>
 </head>
 <body>
-    
-    <h1>Home</h1>
-    
-    <?php if (isset($user)): ?>
-        
-        <p>Hello <?= htmlspecialchars($user["name"]) ?></p>
-        
-        <p><a href="logout.php">Log out</a></p>
-        
-    <?php else: ?>
-        
-        <p><a href="login.php">Log in</a> or <a href="signup.html">sign up</a></p>
-        
-    <?php endif; ?>
-    
+
+	<a href="logout.php">Logout</a>
+	<h1>This is the index page</h1>
+
+	<br>
+	Hello, <?php echo $user_data['user_name']; ?>
 </body>
 </html>
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
