@@ -21,7 +21,8 @@ session_start();
 
 	<br>
 	
-	Hye, <?php echo $user_data['user_name']; ?>
+	Hye, <?php echo $user_data['user_name']; header("Location: index1.php"); ?>
+
 
 </body>
 </html>
