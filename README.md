@@ -4,6 +4,6 @@ Place Simple-Website folder in xampp/htdocs.
 Open XAMPP Control panel.
 Start apache & MYSQL.
 Go to MYSQL Admin.
-local/host/Simple-Website/signup.php
+localhost/Simple-Website/signup.php
 Database file
 [Database.zip](https://github.com/Bakar515/Simple-Website/files/10064739/Database.zip)
