@@ -1,5 +1,5 @@
 Install XAMPP for Local host.
-Download Simple-Website repository on github.
+Download Simple-Website repository with github.
 Place Simple-Website folder in xampp/htdocs.
 Open XAMPP Control panel.
 Start apache & MYSQL.
